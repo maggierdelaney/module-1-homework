@@ -1,0 +1,275 @@
+/*universal selector for all items on the page*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*defines the background color of the body section*/
+body {
+    background-color: #d9dcd6;
+}
+
+/*defines padding, font style, background color and text color of header*/
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/*defines display as inline (horizontally) with the other content in the header (the nav bar) for 'Horiseon' and font size*/
+/*removed 'header' because it was unecessary since this is the only h1 in the html*/
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/*changes the color of these 3 specific letters in Horiseon*/
+/*removed 'header' because it was unecessary since this is the only h1 in the html*/
+h1 .seo {
+    color: #d9dcd6;
+}
+
+/*defines appearance for the nav bar text and positioning*/
+/*removed 'header' because it was unecessary since this is the only nav in the html*/
+nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* this may be unecessary, page does not change when commented out
+.header div ul {
+    list-style-type: none;
+}*/
+
+/*defines the nav bar will be in line (horizontally) with the header h1, and 25px spaced between list items*/
+/*removed the 'header nav ul' because they were unecessary as these are the only li items on the page*/
+li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/*defines color for the nav links and removes underlining*/
+a {
+    color: #ffffff;
+    /*the following stays in because otherwise the links are underlined*/
+    text-decoration: none;
+}
+
+/*all paragraph text will have same size font, anything with <p>*/
+p {
+    font-size: 16px;
+}
+
+/*this sets the style for the large picture top of the homepage*/
+section {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*this was moved up to be more consistent with the organizaiton of the html file*/
+article {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*consolidated the 3 following commented out sections into this one, also moved this up
+from the bottom of the style sheet to be more consistent with the html file*/
+article div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;  
+}
+/*the 3 following sections commented out and consolidated above
+.search-engine-optimization {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+*/
+
+/*moved up in the style sheet to be more consistent with the
+order in the html file, and consolidated the 3 img classes into 1*/
+article img {
+    max-height: 200px; 
+}
+/*commented out because they were consolidated
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}*/
+
+/*moved up in the style sheet to be more consistent with the html file*/
+/*the 3 separate h2 heading styles could be consolidated here*/
+article h2 {
+    margin-bottom: 20px;
+    font-size: 36px;  
+}
+/*commented out because they could be consolidated
+.search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}*/
+
+/*the following two classes were used to shift the article images into the desired right or left spot
+relative to the text*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/*this defines the sizing, positioning, font style and background color of the sidebar*/
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+/*consolidated the 3 divs into 1
+this establishes the margin and color of the divs within the aside*/
+aside div {
+    margin-bottom: 32px;
+    color: #ffffff;  
+}
+
+/*commented out because they could be consolidated into the above
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+*/
+
+/*commented out the 3 separate h3, consolidated since there is only one section with h3s;
+this establishes the margin and text alignment as center within the aside*/
+h3 {
+    margin-bottom: 10px;
+    text-align: center;   
+}
+
+/* the following 3 are commented out and consolidated
+into 1 stlye because they are the only h3 in the html
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}*/
+
+/*commented out the 3 separate img for this class
+as they can be consolidated
+establishes the display as block meaning they stack on each other, 
+as well as margins and maximum width of the icons within the aside*/
+aside img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/*commented out and consolidated as above
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}*/
+
+/*establishing padding, font style, text alignment in the center of the footer
+and clear means it is positioned below left or right elements*/
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/*changed heading to h4 instead of h2
+establishes the font size in the footer*/
+footer h4 {
+    font-size: 20px;
+}

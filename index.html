@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--establishes style sheet, established concise website title-->
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Horiseon Homepage</title>
+</head>
+
+<body>
+    <!--added semantic element 'header' and 'nav' instead of 'div' so the intended content is easier to understand
+    and removed the class=header because it was unecessary-->
+    <header>
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <nav>
+            <ul>
+                <li>
+                    <!--this 'search-engine-optimization' link originally wasn't working until an id= was added in the 
+                    article div below-->
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--this is the big first picture on the page, changed the div to 'section' so the intended purpose is more easily understood
+    and removed the 'class=hero' as it became unecessary-->
+    <!--added alt text for the first image for accessibility-->
+    <section alt="Image with group of 4 people working on a project"></section>
+    <!--this is the 3 rectangle boxes stacked on each other-->
+    <!--The original div was changed to 'article' so the content is more easily understood,
+    the class=content was removed because it is unecessary, and the CSS was changed accordingly-->
+    <article>
+        <!--this one did not have an id= like the other two, after an id= was added the 
+        link from the nav bar became functional-->
+        <!--the class= was removed from the 3 divs because they were no longer needed in the CSS-->
+        <!--added alt= to describe the image-->
+        <div id="search-engine-optimization">
+            <img src="./images/search-engine-optimization.jpg" alt="Image with laptop, coffe cup, magnifying glass, pen holder with pens all surround a notebook with text 'SEO' to represent search engine optimization" class="float-left" />
+            <h2>Search Engine Optimization</h2>
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p>
+        </div>
+        <div id="online-reputation-management">
+            <!--added alt= to describe the image-->
+            <img src="./images/online-reputation-management.jpg" alt="Image shows person working at laptop with the screen displaying the title 'Reputation' and a graph showing improving curve" class="float-right" />
+            <h2>Online Reputation Management</h2>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </div>
+        <div id="social-media-marketing">
+            <!--added alt= to describe the image-->
+            <img src="./images/social-media-marketing.jpg" alt="Image showing people sitting around a table holding various pictures related to social media" class="float-left" />
+            <h2>Social Media Marketing</h2>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </div>
+    </article>
+    <!--changed the original div to 'aside' so the content is more easily understood that it is a side bar
+    the original class=benefits was removed because it is unecessary-->
+    <aside>
+        <!--removed the class= from each div section as they were consolidated-->
+        <div>
+            <h3>Lead Generation</h3>
+            <!--added alt= to describe the image-->
+            <img src="./images/lead-generation.png" alt="Icon of gear sitting atop a funnel with output of a dollar sign"/>
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </div>
+        <div>
+            <h3>Brand Awareness</h3>
+            <!--added alt= to describe the image-->
+            <img src="./images/brand-awareness.png" alt="Icon of a light bulb in place of a person's head with light waves coming off of it"/>
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </div>
+        <div>
+            <h3>Cost Management</h3>
+            <!--added alt= to describe the image-->
+            <img src="./images/cost-management.png" alt="Icon of a large gear with 3 smaller dollar signs around it"/>
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </div>
+    </aside>
+    <!--original div was changed to 'footer' so the section purpose is more easily understood
+    the original class=footer was removed because it is unnecessary-->
+    <footer>
+        <!--added alt text so a screen reader can interpret the heart emoji-->
+        <!--changed heading to h4 to clarify heading order on the page, originally it was h2 which could be confusing-->
+        <h4 alt="Made with love by Horiseon">Made with ❤️️ by Horiseon</h2>
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </footer>
+</body>
+
+</html>
