@@ -9,7 +9,7 @@ Module 1 homework assignment
 - After completing the project, unecessary or redundant parts of the code have been eliminated, and images and icons have alt descriptions for accessibility
 - This homework assignment meets all the acceptance criteria listed below:
     - Must have semantic HTML elements
-        - The original html primarily used "div" to divide up the sections, however this can make it more difficult to understand the intended content of each section, so instead the divs were re-labeled as <header>, <section>, <article>, <aside>, and <footer> to better organize the code
+        - The original html primarily used "div" to divide up the sections, however this can make it more difficult to understand the intended content of each section, so instead the divs were re-labeled as header, section, article, aside, and <footer> to better organize the code
     - Elements must follow logical structure independent of styling and positioning
         - The HTML elements were ordered in a systematic way moving down the page, however the accompanying CSS style sheet presented the elements in an unordered way. The CSS style sheet was re-arranged to more closely match the order of the HTML.
     - Icon and image elements must have accessible alt attritbutes
